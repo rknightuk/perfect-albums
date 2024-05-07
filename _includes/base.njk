@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>Hemispheric Views - Perfect Albums</title>
+
+    <meta property='og:title' content='Hemispheric Views - Perfect Albums' />
+    <meta name='description' content='Hemispheric Views - Perfect Albums' />
+    <meta property='og:description' content='Hemispheric Views - Perfect Albums' />
+    <meta property='og:type' content='article' />
+    <meta property='og:url' content='https://albums.rknight.me' />
+    <meta property='og:url' content='https://albums.rknight.me' />
+    <meta property="og:image" content="https://albums.rknight.me/icons/preview.jpg">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#fdbd30">
+    <meta name="theme-color" content="#fdbd30">
+    <link rel='icon' type='image/x-icon' href='/icons/favicon.ico'>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: system-ui, sans-serif;
+            font-weight: normal;
+            background: #121212;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .header-footer {
+            background: rgb(204,204,204);
+            background: linear-gradient(180deg, rgba(204,204,204,1) 0%, rgba(198,198,198,1) 44%, rgba(126,126,126,1) 100%);
+        }
+
+        header .info {
+            background: #eef2d9;
+            color: #140f12;
+            width: 100%;
+            max-width: 500px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: inset 0 0 5px black;
+            text-align: center;
+            font-size: 0.9em;
+            border: 1px solid #979191;
+            position: relative;
+        }
+        header .info div {
+            margin-bottom: 3px;
+        }
+
+        .buttons {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            display: flex;
+        }
+
+        .buttons div {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin: 5px;
+            box-shadow: inset 0 0 4px black;
+        }
+
+        .buttons .red {
+            background: #fd4635;
+        }
+
+        .buttons .yellow {
+            background: #f7ac2b;
+        }
+
+        .buttons .green {
+            background: #38bc3e;
+        }
+
+        .shuffle-button {
+            position: absolute;
+            top: 10px;
+            bottom: 0;
+        }
+
+        .shuffle-button:hover {
+            cursor: pointer;
+        }
+
+        .shuffle-button svg {
+            width: 20px;
+            height: 20px;
+            fill: #727468;
+            margin-top: 10px;
+        }
+
+        .coverflow {
+            border-bottom: 1px solid black;
+            margin: 0 auto;
+        }
+
+        .coverflow-title-box {
+            font-weight: normal;
+            width: 300px;
+            text-decoration: none;
+        }
+
+        .coverflow-title-box:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            background: white;
+            width: 100%;
+            margin: 0 auto;
+            border-spacing: 0;
+            font-size: 0.9em;
+        }
+
+        thead {
+            background: rgb(204,204,204);
+            background: linear-gradient(180deg, rgba(204,204,204,1) 18%, rgba(198,198,198,1) 65%, rgba(171,171,171,1) 100%);
+            border-top: 1px solid #eee;
+        }
+
+        thead tr {
+            border: none;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+
+        th {
+            border-right: 1px solid #9b9da0;
+        }
+
+        td {
+            border-right: 1px solid #dfe1e3;
+        }
+
+        tr:nth-child(even) {background-color: #f1f6fa;}
+
+        tr:hover {
+            cursor: pointer;
+        }
+
+        tr:hover,
+        tr.active {
+            background-color: #dadee2;
+        }
+
+        footer {
+            font-size: 0.8em;
+            padding: 20px;
+            border-top: 1px solid darkgrey;
+            text-align: center;
+        }
+
+    </style>
+
+    <script type="text/javascript" src="/assets/coverflow.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header-footer">
+        <div class="buttons">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+        </div>
+        <div style="margin-top: 10px; font-size: 0.9em; font-weight: bold;">Perfect Albums</div>
+        <div class="info">
+            <div class="shuffle-button" id="shuffle-button"><svg class="icon"><use xlink:href="#shuffle"></use></svg></div>
+            <div>Hemispheric Views</div>
+            <div><a href="https://listen.hemisphericviews.com/110" target="_blank">110 - It’s Such a Good Truck!</a></div>
+        </div>
+    </header>
+
+<div id="coverflow" class="coverflow" data-size="180" data-spacing="20" data-shadow="true" data-flat="false" data-bgcolor="#121212" data-width="1000">
+    {%- for album in albums %}
+        <img src="/assets/covers/{{ album.album_cover }}" data-info="{{ album.album_title }} - {{ album.album_artist }}" data-link="{{ album.link }}">
+    {% endfor%}
+</div>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Person</th>
+                <th>Album</th>
+                <th>Artist</th>
+                <th>Post Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%- for album in albums %}
+                <tr data-index="{{ loop.index - 1 }}">
+                    <td></td>
+                    <td>{{ album.name }}</td>
+                    <td>{{ album.album_title }}</td>
+                    <td>{{ album.album_artist }}</td>
+                    <td><a href="{{ album.link }}" target="_blank">Link</a></td>
+                </tr>
+            {% endfor%}
+        </tbody>
+    </table>
+</div>
+
+<footer class="header-footer">
+    Made by <a href="https://rknight.me">Robb Knight</a> | <a href="https://github.com/rknightuk/perfect-albums">Source on GitHub</a> | Made with <a href="https://shuding.github.io/coverflow/">coverflow.js</a>
+</footer>
+
+<script>
+    (function() {
+
+        const goToIndex = (index) => {
+            document.querySelectorAll('#coverflow img')[index].click()
+        }
+        document.getElementById('coverflow').attributes['data-width'].value = window.innerWidth - 30
+
+        document.getElementById('shuffle-button').addEventListener('click', function() {
+            const index = Math.floor(Math.random() * Array.from(document.querySelectorAll('#coverflow img')).length)
+            goToIndex(index)
+        })
+
+        Array.from(document.querySelectorAll('tbody tr')).forEach(function(tr) {
+            tr.addEventListener('click', function(e) {
+                goToIndex(tr.dataset.index)
+            })
+        })
+
+    })()
+</script>
+
+<svg display="none">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="shuffle">
+        <path d="M403.8 34.4c12-5 25.7-2.2 34.9 6.9l64 64c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-64 64c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6V160H352c-10.1 0-19.6 4.7-25.6 12.8L284 229.3 244 176l31.2-41.6C293.3 110.2 321.8 96 352 96h32V64c0-12.9 7.8-24.6 19.8-29.6zM164 282.7L204 336l-31.2 41.6C154.7 401.8 126.2 416 96 416H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H96c10.1 0 19.6-4.7 25.6-12.8L164 282.7zm274.6 188c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6V416H352c-30.2 0-58.7-14.2-76.8-38.4L121.6 172.8c-6-8.1-15.5-12.8-25.6-12.8H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H96c30.2 0 58.7 14.2 76.8 38.4L326.4 339.2c6 8.1 15.5 12.8 25.6 12.8h32V320c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l64 64c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-64 64z"/>
+    </symbol>
+</svg>
+
+</body>
+
+</html>
