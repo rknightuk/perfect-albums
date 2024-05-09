@@ -343,5 +343,19 @@ module.exports = function() {
             album_artist: "Swimming",
             album_cover: "swimming.jpg",
         },
+        {
+            name: 'jomalo',
+            link: 'https://jomalo.com/2024/05/08/the-perfect-album.html',
+            album_artist: 'Queensrÿche',
+            album_title: 'Operation: Mindcrime',
+            album_cover: 'mindcrime.jpg',
+        },
+        {
+            name: 'jomalo',
+            link: 'https://jomalo.com/2024/05/08/the-perfect-album.html',
+            album_artist: 'Dixie Dregs',
+            album_title: 'Bring \'Em Back Alive',
+            album_cover: 'bringthembackalive.jpg',
+        }
     ]
   }
