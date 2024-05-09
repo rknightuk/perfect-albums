@@ -339,8 +339,8 @@ module.exports = function() {
         {
             name: "Flamed Fury",
             link: "https://flamedfury.com/posts/mac-miller-swimming/",
-            album_title: "Mac Miller",
-            album_artist: "Swimming",
+            album_artist: "Mac Miller",
+            album_title: "Swimming",
             album_cover: "swimming.jpg",
         },
         {
