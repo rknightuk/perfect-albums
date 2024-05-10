@@ -108,6 +108,7 @@ module.exports = function() {
         {
             name: 'Robb Knight',
             link: 'https://rknight.me/blog/the-perfect-album/',
+            musicthread: 'https://musicthread.app/thread/2gGzMCcyz2CMhCmHY9VkjJbvriU',
             album_artist: 'Linkin Park',
             album_title: 'Meteora',
             album_cover: 'meteora.jpg',
@@ -115,6 +116,7 @@ module.exports = function() {
         {
             name: 'Robb Knight',
             link: 'https://rknight.me/blog/the-perfect-album/',
+            musicthread: 'https://musicthread.app/thread/2gGzMCcyz2CMhCmHY9VkjJbvriU',
             album_artist: 'Sugarcult',
             album_title: 'Palm Trees and Power Lines',
             album_cover: 'palm-tree-and-powerlines.jpg',
@@ -122,6 +124,7 @@ module.exports = function() {
         {
             name: 'Robb Knight',
             link: 'https://rknight.me/blog/the-perfect-album/',
+            musicthread: 'https://musicthread.app/thread/2gGzMCcyz2CMhCmHY9VkjJbvriU',
             album_artist: 'My Chemical Romance',
             album_title: 'The Black Parade',
             album_cover: 'theblackparade.jpg',
@@ -129,6 +132,7 @@ module.exports = function() {
         {
             name: 'Robb Knight',
             link: 'https://rknight.me/blog/the-perfect-album/',
+            musicthread: 'https://musicthread.app/thread/2gGzMCcyz2CMhCmHY9VkjJbvriU',
             album_artist: 'Girl Talk',
             album_title: 'All Day',
             album_cover: 'allday.jpg',
@@ -136,6 +140,7 @@ module.exports = function() {
         {
             name: 'Robb Knight',
             link: 'https://rknight.me/blog/the-perfect-album/',
+            musicthread: 'https://musicthread.app/thread/2gGzMCcyz2CMhCmHY9VkjJbvriU',
             album_artist: 'Linkin Park',
             album_title: 'Hybrid Theory',
             album_cover: 'hybridtheory.jpg',
@@ -143,6 +148,7 @@ module.exports = function() {
         {
             name: 'Robb Knight',
             link: 'https://rknight.me/blog/the-perfect-album/',
+            musicthread: 'https://musicthread.app/thread/2gGzMCcyz2CMhCmHY9VkjJbvriU',
             album_artist: 'Bowling for Soup',
             album_title: 'Acoustic in a Freakin Church',
             album_cover: 'acousticinachurch.jpg',
@@ -150,6 +156,7 @@ module.exports = function() {
         {
             name: 'Robb Knight',
             link: 'https://rknight.me/blog/the-perfect-album/',
+            musicthread: 'https://musicthread.app/thread/2gGzMCcyz2CMhCmHY9VkjJbvriU',
             album_artist: 'Panic! At The Disco',
             album_title: 'A Fever You Cant Sweat Out',
             album_cover: 'afeveryoucantsweatout.jpg',
@@ -157,6 +164,7 @@ module.exports = function() {
         {
             name: 'Robb Knight',
             link: 'https://rknight.me/blog/the-perfect-album/',
+            musicthread: 'https://musicthread.app/thread/2gGzMCcyz2CMhCmHY9VkjJbvriU',
             album_artist: 'Sum 41',
             album_title: 'All Killer No Filler',
             album_cover: 'allkillernofiller.jpg',
@@ -164,6 +172,7 @@ module.exports = function() {
         {
             name: 'Robb Knight',
             link: 'https://rknight.me/blog/the-perfect-album/',
+            musicthread: 'https://musicthread.app/thread/2gGzMCcyz2CMhCmHY9VkjJbvriU',
             album_artist: 'Dr Dre',
             album_title: '2001',
             album_cover: '2001.jpg',
@@ -171,6 +180,7 @@ module.exports = function() {
         {
             name: 'Robb Knight',
             link: 'https://rknight.me/blog/the-perfect-album/',
+            musicthread: 'https://musicthread.app/thread/2gGzMCcyz2CMhCmHY9VkjJbvriU',
             album_artist: 'Jimmy Eat World',
             album_title: 'Bleed American',
             album_cover: 'bleedamerican.jpg',
@@ -178,6 +188,7 @@ module.exports = function() {
         {
             name: 'Robb Knight',
             link: 'https://rknight.me/blog/the-perfect-album/',
+            musicthread: 'https://musicthread.app/thread/2gGzMCcyz2CMhCmHY9VkjJbvriU',
             album_artist: 'MC Lars and K.Flay',
             album_title: 'Single and Famous',
             album_cover: 'singleandfamous.jpg',

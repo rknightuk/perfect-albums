@@ -215,6 +215,7 @@
                 <th>Album</th>
                 <th>Artist</th>
                 <th>Post Link</th>
+                <th>MusicThread</th>
             </tr>
         </thead>
         <tbody>
@@ -225,6 +226,7 @@
                     <td>{{ album.album_title }}</td>
                     <td>{{ album.album_artist }}</td>
                     <td><a href="{{ album.link }}" target="_blank">Link</a></td>
+                    <td>{% if album.musicthread %}<a href="{{ album.musicthread }}" target="_blank">Link</a>{% endif %}</td>
                 </tr>
             {% endfor%}
         </tbody>

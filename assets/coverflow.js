@@ -89,7 +89,7 @@ License: The MIT License
             c.style.overflowX = "scroll";
             c.style.backgroundColor = bgColor;
             var titleBox = document.createElement("a");
-            // if (!shadow) {
+            if (!shadow) {
                 titleBox.className = "coverflow-title-box";
                 titleBox.style.position = "absolute";
                 titleBox.target = '_blank';
@@ -106,7 +106,7 @@ License: The MIT License
                 titleBox.style.textAlign = "center";
                 titleBox.style.display = "block";
                 c.appendChild(titleBox);
-            // }
+            }
             setTransform3D(c, 0, 600, 0);
             placeholding = document.createElement("DIV");
             placeholding.style.width = (width ? width * 2 : (imgSize + (imgs.length + 1) * spacing) * 2) + "px";
