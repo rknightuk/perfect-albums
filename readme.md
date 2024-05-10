@@ -6,6 +6,8 @@
 
 This is not a fun process but it's what we have.
 
+If you have an account on [MusicThread](https://musicthread.app) you can optionally add a link to a thread. If you don't have an account, ask Robb for an invite.
+
 Step one: Write a blog post with your favourite albums
 
 **If you're not comfortable with git** 
