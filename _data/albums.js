@@ -367,6 +367,13 @@ module.exports = function() {
             album_artist: 'Dixie Dregs',
             album_title: 'Bring \'Em Back Alive',
             album_cover: 'bringthembackalive.jpg',
+        },
+        {
+            name: 'Darren Singleton',
+            link: 'https://darren.me/posts/re-a-perfect-album',
+            album_artist: 'Linkin Park',
+            album_title: 'Meteora',
+            album_cover: '0093624928966_600.jpg',
         }
     ]
   }
