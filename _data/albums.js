@@ -374,6 +374,13 @@ module.exports = function() {
             album_artist: 'Linkin Park',
             album_title: 'Meteora',
             album_cover: '0093624928966_600.jpg',
+        },
+        {
+            name: 'Jarrod Blundy',
+            link: 'https://heydingus.net/blog/2024/8/the-perfect-album',
+            album_artist: 'Lauv',
+            album_title: '~how i\'m feeling~',
+            album_cover: 'howimfeeling.jpg',
         }
     ]
   }
